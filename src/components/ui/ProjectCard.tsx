@@ -36,10 +36,10 @@ export default function ProjectCard({
              alt={title}
              className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
            />
-           <div className="absolute inset-0 bg-navy/20 group-hover:bg-transparent transition-colors duration-500" />
+           <div className="absolute inset-0 rounded-[1.5rem] bg-navy/20 group-hover:bg-transparent transition-colors duration-500" />
            
            {/* Hover Actions - Slide in from bottom */}
-           <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 bg-navy/60 backdrop-blur-md transition-all duration-300">
+           <div className="absolute inset-0 rounded-[1.5rem] flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 bg-navy/60 backdrop-blur-md transition-all duration-300">
              <motion.a
                href={liveUrl}
                target="_blank"
