@@ -25,8 +25,8 @@ export const portfolioData: PortfolioData = {
     linkedin: "https://linkedin.com",
     twitter: "https://twitter.com",
     resumeUrl: "/resume.pdf",
-    avatarUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&q=80&fit=crop",
-    aboutImage: "https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80&fit=crop",
+    avatarUrl: "/hero image.png",
+    aboutImage: "/about_me2.png",
     availability: true,
   },
   stats: [
@@ -65,7 +65,7 @@ export const portfolioData: PortfolioData = {
       title: "ShopSphere",
       description:
         "Full-stack e-commerce platform with cart, auth, payments, and admin dashboard.",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=600&q=80&fit=crop",
+      image: "https://images.unsplash.com/photo-1757301714935-c8127a21abc6?w=600&q=80&fit=crop",
       tags: ["React", "Node.js", "MongoDB", "Stripe"],
       category: "fullstack",
       featured: true,
@@ -76,7 +76,7 @@ export const portfolioData: PortfolioData = {
       title: "TaskFlow",
       description:
         "Kanban-style task manager with drag-and-drop, teams, and real-time updates.",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=600&q=80&fit=crop",
+      image: "https://images.unsplash.com/photo-1686061594225-3e92c0cd51b0?w=600&q=80&fit=crop",
       tags: ["React", "TypeScript", "Socket.io"],
       category: "fullstack",
       featured: false,
@@ -87,7 +87,7 @@ export const portfolioData: PortfolioData = {
       title: "WeatherNow",
       description:
         "Beautiful weather dashboard with 7-day forecast, maps, and hourly data.",
-      image: "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w=600&q=80&fit=crop",
+      image: "https://plus.unsplash.com/premium_photo-1683731896418-493316129f0e?w=600&q=80&fit=crop",
       tags: ["React", "OpenWeather API", "Recharts"],
       category: "frontend",
       featured: false,
@@ -98,7 +98,7 @@ export const portfolioData: PortfolioData = {
       title: "ChatSpark",
       description:
         "Real-time chat application with rooms, direct messaging, and file sharing.",
-      image: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?w=600&q=80&fit=crop",
+      image: "https://images.unsplash.com/photo-1521931961826-fe48677230a5?w=600&q=80&fit=crop",
       tags: ["React", "Node.js", "Socket.io", "MongoDB"],
       category: "fullstack",
       featured: false,
@@ -109,7 +109,7 @@ export const portfolioData: PortfolioData = {
       title: "Recipe Genie",
       description:
         "REST API for recipes with search, filtering, ingredient matching, and auth.",
-      image: "https://images.unsplash.com/photo-1466637574441-749b8f19452f?w=600&q=80&fit=crop",
+      image: "https://plus.unsplash.com/premium_photo-1743169049314-0666e8e35ca3?w=600&q=80&fit=crop",
       tags: ["Node.js", "Express", "PostgreSQL"],
       category: "backend",
       featured: false,
@@ -120,7 +120,7 @@ export const portfolioData: PortfolioData = {
       title: "DevBlog",
       description:
         "Personal developer blog with MDX, dark mode, and SEO optimization.",
-      image: "https://images.unsplash.com/photo-1499750310107-5fef28a66643?w=600&q=80&fit=crop",
+      image: "https://images.unsplash.com/photo-1560472354-0088b5dc9d8d?w=600&q=80&fit=crop",
       tags: ["Next.js", "MDX", "Tailwind CSS"],
       category: "frontend",
       featured: false,

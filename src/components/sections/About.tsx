@@ -87,15 +87,6 @@ export default function About() {
                 <div className="absolute inset-0 bg-gradient-to-t from-navy/80 via-transparent to-transparent" />
               </div>
 
-              {/* Status Badge */}
-              <div className="absolute -top-4 right-4 md:right-8 z-20 px-4 py-2 rounded-full glass border-green-500/20 shadow-2xl inline-flex items-center gap-2">
-                <div className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </div>
-                <span className="text-green-400 text-xs font-medium">Open to Work</span>
-              </div>
-
               {/* Floating Fun Facts Bento */}
               <motion.div 
                 className="absolute -right-2 md:-right-10 -bottom-4 md:-bottom-6 p-5 glass shadow-2xl border border-blush/20 space-y-4 min-w-[200px] z-20"

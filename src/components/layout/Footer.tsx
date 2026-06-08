@@ -20,9 +20,9 @@ export default function Footer() {
 
 
       <div className="max-w-7xl mx-auto px-6 pt-10 pb-6 relative z-10">
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 mb-12">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-8 md:gap-10 mb-12">
            {/* Column 1: Brand & Slogan */}
-            <div className="lg:col-span-2">
+            <div className="lg:col-span-2 pr-0 lg:pr-12">
               <button onClick={scrollToTop} className="cursor-pointer mb-6 group text-left">
                 <GradientText as="h2" className="text-4xl md:text-5xl font-display font-bold group-hover:scale-105 transition-transform duration-500 origin-left inline-block">
                   {personal.name}
@@ -61,7 +61,26 @@ export default function Footer() {
              </ul>
            </div>
 
-           {/* Column 3: Contact Directly */}
+           {/* Column 3: Top Skills */}
+           <div>
+              <h3 className="text-white font-display font-bold text-base mb-4">Top Skills</h3>
+              <ul className="space-y-3">
+               {portfolioData.skills.frontend.slice(0, 4).map((skill) => (
+                 <li key={skill.name}>
+                   <span className="text-mauve/70 text-sm font-mono hover:text-blush transition-colors cursor-default">
+                     {skill.name}
+                   </span>
+                 </li>
+               ))}
+               <li>
+                 <span className="text-mauve/70 text-sm font-mono hover:text-blush transition-colors cursor-default">
+                   {portfolioData.skills.backend[0].name}
+                 </span>
+               </li>
+             </ul>
+           </div>
+
+           {/* Column 4: Contact Directly */}
            <div>
               <h3 className="text-white font-display font-bold text-base mb-4">Contact</h3>
               <ul className="space-y-3">
@@ -72,7 +91,18 @@ export default function Footer() {
                  </a>
                </li>
                <li>
-                 <p className="text-mauve/70 text-sm font-mono">{personal.location}</p>
+                 <div className="flex items-center gap-2 mt-2">
+                   <div className="relative flex h-2 w-2">
+                     <span className={`animate-ping absolute inline-flex h-full w-full rounded-full opacity-75 ${personal.availability ? 'bg-green-400' : 'bg-orange-400'}`}></span>
+                     <span className={`relative inline-flex rounded-full h-2 w-2 ${personal.availability ? 'bg-green-500' : 'bg-orange-500'}`}></span>
+                   </div>
+                   <span className="text-mauve/70 text-sm font-mono">
+                     {personal.availability ? "Available for work" : "Currently busy"}
+                   </span>
+                 </div>
+               </li>
+               <li>
+                 <p className="text-mauve/70 text-sm font-mono mt-1">{personal.location}</p>
                </li>
              </ul>
            </div>

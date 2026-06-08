@@ -59,7 +59,7 @@ export default function Navbar() {
                   animate={{ opacity: 1, y: 0 }}
                   exit={{ opacity: 0, y: -20 }}
                   transition={{ duration: 0.3 }}
-                  className="fixed top-16 left-0 right-0 glass border-b border-blush/10"
+                  className="fixed top-16 left-0 right-0 bg-navy/95 backdrop-blur-2xl border-b border-blush/10 shadow-2xl"
                 >
                   <div className="flex flex-col p-6 gap-4">
                     {navLinks.map((link) => (
